@@ -11,4 +11,8 @@ router.post('/students/upload', upload.single('file'), validateCsv, studentContr
 // GET all students
 router.get('/students', studentController.getAllStudents , handleDbError);
 
+// Export Data
+router.get('/students/export', studentController.exportData );
+
+
 module.exports = router;
