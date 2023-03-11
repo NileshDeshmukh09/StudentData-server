@@ -9,7 +9,7 @@ const Student = sequelize.define('Student', {
     allowNull: false
   },
 
-  rollNo: {
+  rollno: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: true

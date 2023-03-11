@@ -13,8 +13,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
 const authRoutes = require("./routes/auth.routes");
+const studentRoutes = require("./routes/student.routes");
 
 app.use( authRoutes );
+app.use( studentRoutes );
 
 
 
